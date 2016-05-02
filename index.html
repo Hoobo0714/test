@@ -1,1 +1,46 @@
-hello everyone
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>3种常用网站图片轮播切换代码 - 站长素材</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <!--渐隐样式-->
+    <link rel="stylesheet" href="css/luara.css"/>
+
+</head>
+<body>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <!--Luara js文件-->
+    <script src="js/jquery.luara.0.0.1.min.js"></script>
+
+    <h1>笨驴一箩筐，哈哈</h1>
+    <hr/>
+    <!--Luara图片切换骨架begin-->
+    <div class="example">
+        <ul>
+            <li><img src="images/1.jpg" alt="1"/></li>
+            <li><img src="images/2.jpg" alt="2"/></li>
+            <li><img src="images/3.jpg" alt="3"/></li>
+            <li><img src="images/4.jpg" alt="4"/></li>
+        </ul>
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </div>
+    <!--Luara图片切换骨架end-->
+    <script>
+    $(function(){
+        <!--调用Luara示例-->
+        $(".example").luara({width:"500",height:"334",interval:4000,selected:"seleted"});
+
+    });
+    </script>
+
+
+</div>
+</body>
+</html>
